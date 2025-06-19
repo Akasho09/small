@@ -19,9 +19,9 @@ export async function fetchPosts(): Promise<Post[]> {
 // Fetch a single post
 export async function fetchPost(id: string | number): Promise<Post | null> {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || 'https://small09.vercel.app' 
-    process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}` || // for Vercel
-    'http://localhost:3000' // fallback for dev
+    process.env.NEXT_PUBLIC_BASE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null) ||
+    'https://small09.vercel.app'
 
   const res = await fetch(`${baseUrl}/api/posts/${id}`)
 
