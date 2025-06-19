@@ -18,6 +18,9 @@ Develop a fully functional dashboard and public-facing blog interface for managi
 - **React Query** — For data fetching, caching, and mutations
 - **TipTap Editor** — For post body editing in a **Markdown Editor** style
 - **TypeScript** — Type-safe development
+- **Prisma** — Type-safe ORM for interacting with the database
+- **PostgreSQL** — Persistent relational database
+
 
 ---
 
@@ -42,6 +45,12 @@ Develop a fully functional dashboard and public-facing blog interface for managi
 - Clean layout and responsive design
 
 ---
+
+## 🧱 Backend Integration
+- Posts are persisted in a PostgreSQL database
+- Prisma ORM is used for schema modeling, migrations, and type-safe queries
+- On initial setup, posts are fetched from JSONPlaceholder and stored locally
+- All API operations (GET, POST, PUT, DELETE) work with the local DB
 
 ## 🔐 Notes
 
@@ -102,5 +111,7 @@ Open http://localhost:3000 in your browser.
 ✅ README.md with setup and usage instructions
 
 ⭐ Bonus: Live deployment link on Vercel
+
+
 
 
