@@ -111,7 +111,3 @@ Open http://localhost:3000 in your browser.
 ✅ README.md with setup and usage instructions
 
 ⭐ Bonus: Live deployment link on Vercel
-
-
-
-
